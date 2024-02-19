@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first published website</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
 </head>
 <body>
-    <h1>Hello from a published page!</h1>
-    <h2>This was added later</h2>
+    <div class="quiz-container">
+        <h1>Quiz despre HTML și CSS</h1>
+        <div id="question-container">
+            <!-- Intrebarea si variantele de raspuns vor fi generate aici din JavaScript -->
+        </div>
+        <div id="explanation-container" class="explanation"></div>
+        <button id="submit-btn">Verifica Raspunsul</button>
+        <button id="new-question-btn" class="info">Alta intrebare!</button>
+        <div id="result-container"></div>
+    </div>
+    <script src="quiz.js"></script>
 </body>
 </html>
